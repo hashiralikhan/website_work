@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.flight {display:none; position: relative;}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.flight:hover .overlay {
+  opacity: 1;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* 50% white background */
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div id="flightSlider" class="w3-content w3-section flight_slider" style="max-width:500px">
+  <div class="flight">
+    <img class="flight-image" src="./asserts/web_slide_11.webp" style="width:100%">
+    <div class="overlay"></div>
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+  <div class="flight">
+    <img class="flight-image" src="./asserts/web_slide_21.jpg" style="width:100%">
+    <div class="overlay"></div>
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+  <div class="flight">
+    <img class="flight-image" src="img_chicago.jpg" style="width:100%">
+    <div class="overlay"></div>
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+var flightIndex = 0;
+var timer;
+
+function startCarousel() {
+  timer = setInterval(carousel, 2000);
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("flight");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  flightIndex++;
+  if (flightIndex > x.length) {flightIndex = 1}    
+  x[flightIndex-1].style.display = "block";  
+}
+
+function pauseCarousel() {
+  clearInterval(timer);
+}
+
+document.getElementById("flightSlider").addEventListener("mouseenter", pauseCarousel);
+document.getElementById("flightSlider").addEventListener("mouseleave", startCarousel);
+
+startCarousel(); // Start automatic slideshow initially
+
+function plusSlides(n) {
+  showSlides(flightIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var x = document.getElementsByClassName("flight");
+  if (n > x.length) {flightIndex = 1}    
+  if (n < 1) {flightIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[flightIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

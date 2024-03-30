@@ -1,0 +1,22 @@
+/* Additional CSS for equal spacing */
+.flight_nav .flight_navbar-nav {
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flight_nav .flight_navbar-nav .flight_nav-item {
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  /* Custom styles for hover and selected list items */
+  .flight_nav .flight_nav-item .flight_nav-link.navbar-link:hover {
+    color: blue !important; /* Change hover color as needed */
+  }
+  
+  .flight_nav .flight_nav-item.active .flight_nav-link.navbar-link {
+    color: red !important; /* Change selected color as needed */
+  }
+  

@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Types with Increase and Decrease Buttons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .room {
+      margin-bottom: 10px;
+    }
+
+    .room label {
+      margin-right: 10px;
+    }
+
+    .room button {
+      margin-right: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 5px 10px;
+    }
+
+    .room span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>List of Room Types</h2>
+  <div id="roomContainer">
+    <div class="room">
+      <label><i class="fas fa-bed"></i> Double</label>
+      <button onclick="decreaseValue(0)">-</button>
+      <span>0</span>
+      <button onclick="increaseValue(0)">+</button>
+    </div>
+    <div class="room">
+      <label><i class="fas fa-couch"></i> Tripple</label>
+      <button onclick="decreaseValue(1)">-</button>
+      <span>0</span>
+      <button onclick="increaseValue(1)">+</button>
+    </div>
+    <div class="room">
+      <label><i class="fas fa-door-closed"></i> Quad</label>
+      <button onclick="decreaseValue(2)">-</button>
+      <span>0</span>
+      <button onclick="increaseValue(2)">+</button>
+    </div>
+    <div class="room">
+      <label><i class="fas fa-window-restore"></i> Quint</label>
+      <button onclick="decreaseValue(3)">-</button>
+      <span>0</span>
+      <button onclick="increaseValue(3)">+</button>
+    </div>
+  </div>
+  Total count: <span id="totalCount">0</span>
+
+  <script>
+    // Room types and their initial values
+    const initialValues = [0, 0, 0, 0];
+
+    // Increase and decrease functions
+    function increaseValue(index) {
+      const valueSpan = document.querySelectorAll('.room span')[index];
+      let value = parseInt(valueSpan.textContent);
+      value++;
+      valueSpan.textContent = value;
+      updateTotalCount();
+    }
+
+    function decreaseValue(index) {
+      const valueSpan = document.querySelectorAll('.room span')[index];
+      let value = parseInt(valueSpan.textContent);
+      if (value > 0) {
+        value--;
+        valueSpan.textContent = value;
+        updateTotalCount();
+      }
+    }
+
+    // Function to update total count
+    function updateTotalCount() {
+      const totalCountSpan = document.getElementById('totalCount');
+      let totalCount = 0;
+      document.querySelectorAll('.room span').forEach(span => {
+        totalCount += parseInt(span.textContent);
+      });
+      totalCountSpan.textContent = totalCount;
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <div class="footer_main">
+    <div class="footer_inner">
+      <h3>Quick Links</h3>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Flights</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Hajj</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> About Us</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Terms & Conditions</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Privacy Policy</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Refund Policy</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer_inner">
+      <h3>OUR BRANCHES</h3>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Islamabad</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Peshawar</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i>  Lahore</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Mirpur</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Dubai (UAE)</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Makkah</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Madinah</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> United Kingdom</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer_inner">
+      <h3>CONTACT US</h3>
+      <nav>
+        <ul>
+          <li><a href="tel:+923030313185">
+            <i class="fas fa-phone"></i> 03030313185
+          </a></li>
+          <li><a href="mailto:hashiraliphw@gmail.com">
+            <i class="fas fa-envelope"></i> hashiraliphw@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ittehad Travels Office No 3 Ground Floor,
+            Office Tower 44 East Fazal E Haq Road Blue Area, G 6/2, Islamabad, 44000, Pakistan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="footer_copyright">
+    <p>&copy; 2024 <span>R & H </span>Develpers. All rights reserved.</p>
+  </div>
+</body>
+
+</html>

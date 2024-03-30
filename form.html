@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form with Validation</title>
+<style>
+  .umrah-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .umrah-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .umrah-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .umrah-error-message {
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<form action="#" method="POST" class="contact-form" id="contactForm">
+  <div class="umrah-input-group">
+    
+    <input type="text" id="username" name="username" class="umrah-input" placeholder="Your Username">
+    <span class="umrah-error-message" id="usernameError"></span>
+  </div>
+  
+  <div class="umrah-input-group">
+    
+    <input type="email" id="useremail" name="useremail" class="umrah-input" placeholder="Your Email">
+    <span class="umrah-error-message" id="useremailError"></span>
+  </div>
+  
+  <div class="umrah-input-group">
+    
+    <input type="tel" id="userphone" name="userphone" class="umrah-input" placeholder="Your Phone Number">
+    <span class="umrah-error-message" id="userphoneError"></span>
+  </div>
+  
+  <div class="umrah-input-group">
+    
+    <textarea id="usermessage" name="usermessage" class="umrah-input" placeholder="Type your message here"></textarea>
+    <span class="umrah-error-message" id="usermessageError"></span>
+  </div>
+  
+  <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#contactForm').submit(function(event) {
+      event.preventDefault();
+      $('.umrah-error-message').text('');
+
+      const username = $('#username').val().trim();
+      const useremail = $('#useremail').val().trim();
+      const userphone = $('#userphone').val().trim();
+      const usermessage = $('#usermessage').val().trim();
+
+      let valid = true;
+
+      if (!username) {
+        $('#usernameError').text('Please enter your username.');
+        valid = false;
+      }
+
+      if (!useremail) {
+        $('#useremailError').text('Please enter your email.');
+        valid = false;
+      } else if (!isValidEmail(useremail)) {
+        $('#useremailError').text('Please enter a valid email address.');
+        valid = false;
+      }
+
+      if (!userphone) {
+        $('#userphoneError').text('Please enter your phone number.');
+        valid = false;
+      } else if (!isValidPhone(userphone)) {
+        $('#userphoneError').text('Please enter a valid phone number.');
+        valid = false;
+      }
+
+      if (!usermessage) {
+        $('#usermessageError').text('Please enter your message.');
+        valid = false;
+      }
+
+      if (valid) {
+        console.log('Form is valid. Submitting...');
+        // $(this).unbind('submit').submit();
+      }
+    });
+  });
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  function isValidPhone(phone) {
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
+  }
+</script>
+
+</body>
+</html>

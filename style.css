@@ -1,0 +1,878 @@
+.flight_nav .nav-item:nth-child(odd) {
+  background: red;
+  margin: 0px 5px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.flight_nav .nav-link.active {
+  background: #0181DD !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.nav_bartop {
+  background: #0181DD;
+}
+
+.nav_bartop .dropmenu {
+  margin-top: 16px;
+}
+
+.flight_nav .nav-tabs .nav-link {
+  border: 0px;
+}
+
+.nav_bartop .dropmenu a {
+  color: black !important;
+}
+.scrol_inner i {
+  color: blue;
+  border-radius: 50px;
+  border: 1px solid;
+  padding: 10px;
+  height: 39px;
+  background: #ffffff;
+}
+.scrol_main button {
+  border: 1px solid;
+  border-radius: 22px;
+  padding: 10px 15px;
+  background: #ffffff;
+}
+.map_inner1 {
+  padding: 10px 20px 15px 10px;
+  background: #fff;
+  height: 450px;
+  overflow-x: hidden;
+}
+.nav_bartop .dropmenu a:hover {
+  background: #0181DD;
+  color: #ffffff !important;
+  border-radius: 5px;
+}
+.scrol_inner{
+  display: flex;
+  padding-right: 32px;
+}
+
+/* Additional CSS for equal spacing and selected color */
+.navbar .navbar-nav {
+  padding-left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-lider {
+  display: none;
+}
+
+.flight_nav .tab-content,
+.inner_tab {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 0px 15px 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.inner-tab .form {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.inner-tab .btn {
+  padding: 10px 20px;
+  background: chocolate;
+  color: #ffffff;
+}
+
+.home-bg {
+  margin-top: -24px;
+  padding: 40px 10px;
+}
+
+.from_where::after {
+  content: "\f362";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  right: -15px;
+  z-index: 1;
+  top: 5px;
+  height: 39px;
+  width: 37px;
+  background: #ffffff;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 5px 8px;
+}
+
+.tab-bg,
+.home-bg {
+  background-image: url(https://www.rehmantravel.com/assets/blueclouds.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.form_main .btn {
+  display: flex;
+  gap: 9px;
+  padding: 13px 20px;
+  height: 50px;
+  background: chocolate;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.form_main {
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  gap: 5px;
+}
+
+.form_main .error-message {
+  position: absolute;
+  top: -18px;
+  left: 14px;
+}
+
+.input-group input {
+  padding: 8px;
+  padding-left: 50px;
+  font-size: 20px;
+  border-radius: 13px !important;
+  width: 100%;
+}
+
+.input-group .material-icons {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 24px;
+}
+
+.flight_nav {
+  padding-top: 40px;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 20px;
+  /* Adjust as needed */
+  margin-right: 20px;
+  /* Adjust as needed */
+}
+
+/* Custom styles for selected list item */
+.navbar .nav-item.active .nav-link {
+  color: #ffc107 !important;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar .nav-item:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav_bartop .nav-item.nav-item a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#Flight .nav {
+  row-gap: 10px;
+}
+.scrol_main:nth-child(n+2) {
+  padding-top: 15px;
+  border-top: 1px solid;
+  margin-top: 15px;
+}
+.form .inner_main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.visa_main {
+  display: flex;
+  grid-column-gap: 20px;
+}
+
+.flight_main {
+  display: flex;
+  column-gap: 25px;
+  flex-wrap: wrap;
+}
+
+.flight_main .inner_sec {
+  margin-bottom: 10px;
+}
+
+.flight_phone {
+  width: 30%;
+  display: flex;
+  gap: 11px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .inner_tab .nav-link.active {
+  background: black !important;
+} */
+
+.inner_tab .nav-link {
+  margin: 0px 5px;
+  color: black;
+  border: 1px solid !important;
+  border-radius: 40px !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .form_icon {
+    left: 90%;
+    top: 11%;
+  }
+
+  .input-group {
+    margin-bottom: 8px;
+  }
+
+  .\32 nd_inner h5 {
+    width: 100% !important;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .form .inner_main,
+  .form_main,
+  .visa_main {
+    display: block;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .flight_phone {
+    width: 100%;
+  }
+
+  .Main-nav img {
+    width: 85%;
+  }
+
+  .form_main {
+    flex-wrap: wrap;
+  }
+
+  .umrah_sec2,
+  .sec2_col1 .sec2_box,
+  .umrah-form_m form,
+  .flight_container {
+    flex-direction: column;
+  }
+
+  .sec2_col2,
+  .sec2_col1,
+  .sec2_col1 h5 {
+    width: 100% !important;
+  }
+
+  .umrah-form_m form {
+    grid-template: none !important;
+  }
+
+  .form-calculation {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+
+  .form-calculation div {
+    margin-bottom: 10px;
+  }
+
+  .Main-nav .m-4 {
+    margin: 0px !important;
+  }
+
+  .from_where::after {
+    transform: rotate(90deg);
+    right: 0px;
+    top: 35px;
+  }
+
+  .con_2ndmain {
+    padding: 15px 0px 15px 15px !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .umrah-form_m2 {
+    border-top: 2px dashed;
+    border-left: none !important;
+    padding-top: 20px;
+  }
+
+  .umrah_sec2 {
+    padding: 20px 20px !important;
+  }
+  .contact_sec3 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .umrah_banner {
+    height: 200px !important;
+  }
+  .map_inner2 iframe {
+    width: 100% !important;
+}
+  .home_sec3 .homecard {
+    flex-direction: column;
+  }
+  .contact_map {
+    display: block !important;
+    width: 90% !important;
+}
+.search-container {
+  width: 100%;
+}
+  .footer_main {
+    display: block !important;
+    padding: 20px 30px !important;
+  }
+
+  .umrah_banner h1 {
+    padding-top: 85px !important;
+  }
+
+  .cal_button {
+    gap: 5px !important;
+  }
+
+  .cal_button button {
+    padding: 10px 5px !important;
+    font-weight: 500 !important;
+    width: 130px;
+  }
+  .inner_card iframe {
+    width: 307px;
+    height: 200px;
+}
+  .form_main1 {
+    display: block !important;
+    padding: 20px 10px !important;
+  }
+
+  .contactus_banner h1 {
+    padding: 6rem !important;
+  }
+
+  .form_main1 img {
+    width: 250px;
+  }
+}
+
+.flight {
+  display: none;
+}
+.contact_heading {
+  padding: 13px 40px;
+  background: rgb(1, 129, 221);
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+.contact_banner {
+  background-image: url(https://www.rehmantravel.com/assets/contact-us/contact-us-banner.webp);
+}
+
+.contactus_banner {
+  background-image: url(https://www.rehmantravel.com/assets/contact-us/contact-us-banner.webp);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #bdbdbd;
+  background-attachment: fixed;
+}
+
+.contactus_banner h1 {
+  text-align: center;
+  padding: 11rem;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.form_sec2 {
+  background: rgb(241, 245, 248);
+  margin-top: -7px;
+  padding-top: 20px;
+}
+
+.form_main1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 80px;
+  margin-top: -90px;
+  border-radius: 20px;
+}
+
+/* Slider css end */
+/* form home page */
+/* Vissa css */
+.umrah_banner {
+  background-image: url(https://www.rehmantravel.com/assets/Visa/dubai-banner.webp);
+  background-size: cover;
+  height: 350px;
+}
+
+.umrah_banner h1 {
+  text-align: center;
+  padding-top: 11rem;
+  color: #ffffff;
+}
+
+.umrah-input-group {
+  margin-bottom: 20px;
+}
+
+.umrah-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.umrah-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.umrah-error-message {
+  color: red;
+}
+
+.umrah_sec2 {
+  display: flex;
+  background: #E5E7EB;
+  padding: 40px;
+  gap: 30px;
+}
+
+.sec2_col1 {
+  width: 70%;
+  background: #ffffff;
+  padding: 25px;
+}
+
+.sec2_col1 h5 {
+  padding: 15px 20px;
+  width: 30%;
+  border: 1px dashed;
+  background: #E3EFFC;
+  color: #3B82F6;
+  font-weight: 500;
+}
+
+.sec2_col1 .sec2_box {
+  display: flex;
+  gap: 20px;
+}
+
+.sec2_box_inner {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.sec2_box_inner p {
+  border-bottom: 1px solid;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px;
+  background: #0181DD;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sec2_box_inner h4 {
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 0px 5px 12px;
+}
+
+.sec2_box_inner h6 {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid;
+}
+
+.sec2_col2 {
+  width: 25%;
+}
+
+.sec2_col2 h4 {
+  color: #ffffff;
+  background: #0181DD;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.sec2_col2 button,
+.about_col2 button {
+  padding: 10px 60px;
+  border: 1px solid #0181DD;
+  color: #0181DD;
+  background: #ffffff;
+  font-weight: 500;
+}
+
+.sec2_col2 button:hover,
+.about_col2 button:hover {
+  background: #0181DD;
+  color: #ffffff;
+}
+
+/* Flight css */
+.flight_banner {
+  background-image: url(https://www.rehmantravel.com/assets/Umrah/economy-banner.webp);
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+.flight_banner h1 {
+  text-align: center;
+  color: #ffffff;
+
+}
+
+.flight_container {
+  width: 90%;
+  background: #ffffff;
+  padding: 20px 15px;
+  margin: 0 auto !important;
+  border: dashed 1px;
+}
+
+.umrah-form_m form {
+  display: flex;
+  gap: 10px;
+}
+
+.umrah-form_m .form_btn {
+  margin-top: 19px;
+  padding: 0px 30px;
+  height: 42px;
+}
+
+.umrah-form_m2 {
+  border-left: dashed 2px;
+  padding-left: 25px;
+}
+
+.form-calculation {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  margin-top: 20px;
+  border-top: 1px dashed;
+  padding-top: 30px;
+}
+
+.form-calculation div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 5px;
+}
+
+.cal_button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  border-top: 2px dashed;
+  padding: 30px;
+}
+
+.cal_button button {
+  padding: 9px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn1 button {
+  background-color: #991B1B;
+  border: 1px;
+}
+
+.btn2 button {
+  background: #166534;
+  border: 1px;
+}
+
+.form-group label,
+.form-calculation label {
+  color: #0181DD;
+  font-weight: 400;
+}
+
+.umrah-form_m2 label {
+  color: #0181DD;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.container_2nd {
+  background: #F0F4F7;
+  padding: 60px 40px;
+}
+
+.\32 nd_inner {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.\32 nd_inner h5 {
+  border: 1px dashed blue;
+  width: 26%;
+  padding: 14px;
+  border-radius: 5px;
+  color: #0181DD;
+  background-color: rgb(227, 239, 252);
+}
+
+.tab_bar a {
+  padding: 11px;
+  background: red;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: large;
+}
+
+.tab_bar {
+  display: flex;
+  gap: 10px;
+}
+
+.con_2nd {
+  background: rgb(241, 245, 248);
+}
+
+.content_main img {
+  height: 90px;
+  border-radius: 50px;
+}
+
+.content_main {
+  display: flex;
+  gap: 10px;
+}
+
+.content_inner {
+  padding-top: 15px;
+}
+
+.con_2ndmain {
+  margin-top: 40px;
+  background: rgb(214, 228, 241);
+  padding: 10px 100px;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 3fr;
+}
+
+.content_main1 {
+  padding-top: 30px;
+  font-size: x-large;
+}
+
+.homecard_main img {
+  width: 260px;
+  height: 146px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.homecard .homecard_inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.homecard_main {
+  background: #ffffff;
+  width: 260px;
+  padding-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+}
+
+.home_sec3 {
+  width: 85%;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+
+.home_sec3 .homecard {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.homecard .homecard_main h5,
+.homecard .homecard_main p {
+  padding: 15px 0px 10px 15px;
+}
+
+.home_rehman {
+  margin-top: 30px;
+}
+
+.footer_inner ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer_inner li {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.footer_inner li a,
+.footer_inner h3 {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer_inner li a:hover {
+  text-decoration: underline;
+  /* Show underline on hover */
+}
+
+.footer_main {
+  background: rgb(1, 129, 221);
+  padding: 50px 90px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.footer_inner .fas {
+  padding-right: 7px;
+}
+
+.footer_copyright {
+  background-color: rgb(1, 129, 221);
+  text-align: center;
+  padding: 20px 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 600;
+  border-top: 1px solid #ddd;
+}
+.search-container {
+  position: relative;
+  width: 300px;
+  margin: 15px 0px;
+}
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 8px 30px 8px 10px; /* Adjust padding to fit the icon */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.search-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.contact_map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: 0 auto;
+}
+.contact_sec3 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.inner_card {
+  width: 96%;
+  background: rgb(241, 245, 248);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.contain_card {
+  padding: 15px 8px;
+}
+.contain_card p {
+  margin-top: 10px;
+}

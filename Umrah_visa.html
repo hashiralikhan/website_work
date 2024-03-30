@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container Main-nav">
+        <div class="row">
+            <div class="m-4 col-lg-5">
+                <img src="asserts/Ittehad.logo.png" alt="" srcset="">
+            </div>
+            <div class="m-4 col-lg-5">
+                <h3>Contact us <span><a href="tel:+923030313185">03030313185</a></span></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light nav_bartop">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flight.html">Flight</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hajj
+                    </a>
+                    <div class="dropdown-menu dropmenu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="test.html">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Umrah
+                    </a>
+                    <div class="dropdown-menu dropmenu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Contact 1</a>
+                        <a class="dropdown-item" href="#">Contact 2</a>
+                        <a class="dropdown-item" href="#">Contact 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="flight_banner">
+        <h1>Book Your Umrah Package</h1>
+        <div class="row flight_container">
+            <div class="m-12 col-lg-9 umrah-form_m">
+                <form>
+                    <div class="form-group">
+                        <label for="location1">Location-1:</label>
+                        <select class="form-control" id="location1">
+                            <option value="Makkah">Makkah</option>
+                            <option value="Madina">Madina</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hotelMadinah">Hotel In Madinah:</label>
+                        <select class="form-control" id="hotelMadinah">
+                            <option value="Hotel A">Hotel A</option>
+                            <option value="Hotel B">Hotel B</option>
+                            <option value="Hotel C">Hotel C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date:</label>
+                        <input type="date" class="form-control" id="checkin">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date:</label>
+                        <input type="date" class="form-control" id="checkout">
+                    </div>
+
+                    <button type="submit" class="form_btn">Submit</button>
+                </form>
+                <div class="form-calculation">
+                    <div>
+                        <label for="location">Location:</label>
+                        <select id="location" name="location">
+                            <option value="Makkah">Makkah</option>
+                            <option value="Madina">Madina</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vehicleType">Vehicle Type:</label>
+                        <select id="vehicleType" name="vehicleType">
+                            <option value="Car">Car</option>
+                            <option value="Van">Van</option>
+                            <option value="Bus">Bus</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="travelers">Number of Travelers:</label>
+                        <input type="number" id="travelers" name="travelers" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="cal_button">
+                    <div class="btn1">
+                        <button><i class="fas fa-undo"></i> Reset Form</button>
+                    </div>
+                    <div class="btn2">
+                        <button><i class="fas fa-calculator"></i> Calculate UBC</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-12 col-lg-3 umrah-form_m2 ">
+
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}"
+                            placeholder="Enter your contact number (10 digits)" required>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="umrah_sec2">
+        <div class="sec2_col1">
+            <h5>Thailand Visit Visa</h5>
+            <p>
+                Umrah is a holy duty and since there is no fixed time to perform it, you will find plenty of Umrah Packages throughout the year that will accommodate you just the right way. But when it comes to Best Umrah Packages, Rehman Travels offers you with the best ones. They even give you the opportunity to design your own Umrah package according to your budget and see for yourself regarding the necessities and facilities you will be needing
+            </p>
+        </div>
+
+        <div class="sec2_col2">
+            <h4>Request a Callback</h4>
+            <form action="#" method="POST" class="contact-form" id="contactForm">
+                <div class="umrah-input-group">
+
+                    <input type="text" id="username" name="username" class="umrah-input" placeholder="Your Username">
+                    <span class="umrah-error-message" id="usernameError"></span>
+                </div>
+
+                <div class="umrah-input-group">
+
+                    <input type="email" id="useremail" name="useremail" class="umrah-input" placeholder="Your Email">
+                    <span class="umrah-error-message" id="useremailError"></span>
+                </div>
+
+                <div class="umrah-input-group">
+
+                    <input type="tel" id="userphone" name="userphone" class="umrah-input"
+                        placeholder="Your Phone Number">
+                    <span class="umrah-error-message" id="userphoneError"></span>
+                </div>
+
+                <div class="umrah-input-group">
+
+                    <textarea id="usermessage" name="usermessage" class="umrah-input"
+                        placeholder="Type your message here"></textarea>
+                    <span class="umrah-error-message" id="usermessageError"></span>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Footer-code -->
+    <div class="footer_main">
+        <div class="footer_inner">
+          <h3>Quick Links</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Home</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Flights</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Hajj</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Terms & Conditions</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Privacy Policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Refund Policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="footer_inner">
+          <h3>OUR BRANCHES</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Islamabad</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Peshawar</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>  Lahore</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Mirpur</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Dubai (UAE)</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Makkah</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Madinah</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> United Kingdom</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="footer_inner">
+          <h3>CONTACT US</h3>
+          <nav>
+            <ul>
+              <li><a href="tel:+923030313185">
+                <i class="fas fa-phone"></i> 03030313185
+              </a></li>
+              <li><a href="mailto:hashiraliphw@gmail.com">
+                <i class="fas fa-envelope"></i> hashiraliphw@gmail.com</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ittehad Travels Office No 3 Ground Floor,
+                Office Tower 44 East Fazal E Haq Road Blue Area, G 6/2, Islamabad, 44000, Pakistan</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <p>&copy; 2024 <span>R & H </span>Develpers. All rights reserved.</p>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPX9o7PhW8g9xF1ePpE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

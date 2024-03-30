@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container Main-nav">
+        <div class="row">
+            <div class="m-4 col-lg-5">
+                <img src="asserts/Ittehad.logo.png" alt="" srcset="">
+            </div>
+            <div class="m-4 col-lg-5">
+                <h3>Contact us <span><a href="tel:+923030313185">03030313185</a></span></h3>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light nav_bartop">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flight.html">Flight</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hajj
+                    </a>
+                    <div class="dropdown-menu dropmenu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Umrah
+                    </a>
+                    <div class="dropdown-menu dropmenu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Contact 1</a>
+                        <a class="dropdown-item" href="#">Contact 2</a>
+                        <a class="dropdown-item" href="#">Contact 3</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact Us.html">contact Us </a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home-bg">
+
+        <div class=".container-fluid ">
+
+            <div class="m-4">
+                <div class="tab_bar">
+                    <ul class="nav nav-pills" id="myTab">
+                        <li class="nav-item">
+                            <a href="#Flight" class="nav-link active">
+                                <i class="fas fa-plane"></i> Flight
+                            </a>
+                        </li>
+                   
+                    </ul>
+                    <a href="Umrah_visa.html"><i class="fas fa-mosque"></i> Umrah</a>
+          <a href="thailand-tour.html"> <i class="fas fa-passport"></i> visa</a>
+                </div>
+                <div class="inner_tab">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="Flight">
+                            <div class="main-inner_tab">
+                                <ul class="nav nav-pills" id="myTabFlight">
+                                    <li class="nav-item">
+                                        <a href="#Round_Trip" class="nav-link active" data-bs-toggle="tab" role="tab"
+                                            aria-controls="Round_Trip" aria-selected="true">Round Trip</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#flightOneWay" class="nav-link" data-bs-toggle="tab" role="tab"
+                                            aria-controls="flightOneWay" aria-selected="false">One Way</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#dimension" class="nav-link" data-bs-toggle="tab" role="tab"
+                                            aria-controls="dimension" aria-selected="false">Multi Dimension</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content inner-tab">
+                                    <div class="tab-pane fade show active" id="Round_Trip">
+                                        <form action="#" method="GET" class="form_main" id="travelFormRoundTrip">
+                                            <!-- Your form content for round trip -->
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <button class="btn" type="submit"><i class="fas fa-search"></i>
+                                                Search</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="flightOneWay">
+                                        <form action="#" method="GET" class="form_main" id="travelFormOneWay">
+                                            <!-- Your form content for one way -->
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <button class="btn" type="submit"><i class="fas fa-search"></i>
+                                                Search</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="dimension">
+                                        <!-- Your form content for multi dimension -->
+                                        <form action="#" method="GET" class="form_main" id="travelFormDimension1">
+                                            <!-- Your first multi-dimension form content -->
+                                            <div class="flight_1">flight_1</div>
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <button class="btn" type="submit"><i class="fas fa-search"></i>
+                                                Search</button>
+                                            <!-- Your form content here -->
+                                        </form>
+                                        <form action="#" method="GET" class="form_main two_dimention"
+                                            id="travelFormDimension2">
+                                            <!-- Your second multi-dimension form content -->
+                                            <div class="flight_2">flight_2</div>
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <button class="btn btn-primary addFormButton2" type="button">Add</button>
+                                            <!-- Your form content here -->
+                                        </form>
+                                        <!-- Third form initially hidden -->
+                                        <form action="#" method="GET" class="form_main two_dimention"
+                                            id="travelFormDimension3" style="display: none;">
+                                            <!-- Your third multi-dimension form content -->
+                                            <div class="flight_3">flight_3</div>
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <!-- Your form content here -->
+                                            <button class="btn btn-primary removeFormButton3"
+                                                type="button">Remove</button>
+                                            <button class="btn btn-primary addFormButton3" type="button">Add</button>
+                                        </form>
+
+                                        <!-- Fourth form initially hidden -->
+                                        <form action="#" method="GET" class="form_main two_dimention"
+                                            id="travelFormDimension4" style="display: none;">
+                                            <!-- Your fourth multi-dimension form content -->
+                                            <div class="flight_4">flight_4</div>
+                                            <div class="input-group from_where">
+                                                <i class="material-icons">flight_takeoff</i>
+                                                <input type="text" id="from" name="from" placeholder="From Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <div class="input-group">
+                                                <i class="material-icons">flight_land</i>
+                                                <input type="text" id="to" name="to" placeholder="To Where">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="departure" name="departure"
+                                                    placeholder="Departure Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group ret_time">
+                                                <i class="material-icons">date_range</i>
+                                                <input type="date" id="return" name="return" placeholder="Return Date">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+                                            <div class="input-group">
+                                                <i class="material-icons">phone</i>
+                                                <input type="tel" id="contact" name="contact"
+                                                    placeholder="Phone Number">
+                                                <span class="error-message"></span> <!-- Error message placeholder -->
+                                            </div>
+
+                                            <!-- Your form content here -->
+                                            <button class="btn btn-primary removeFormButton4" type="button
+                      ">Remove</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Visa">
+                            <form action="" class="form">
+                                <div class="visa_main">
+                                    <div class="inner_sec">
+                                        <label for="fname">Nationality</label><br>
+                                        <select id="Nationality" name="Nationality">
+                                            <option value="United States">United States</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="France">France</option>
+                                            <option value="Japan">Japan</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="inner_sec">
+                                        <label for="lname">Visa</label><br>
+                                        <select id="Visa" name="Visa">
+                                            <option value="USA">United States of America</option>
+                                            <option value="CAN">Canada</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="GER">Germany</option>
+                                            <option value="FRA">France</option>
+                                            <option value="JPN">Japan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="inner_main">
+                                    <div class="inner_sec">
+                                        <label for="mobile">Mobile Number:</label><br>
+                                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+                                            placeholder="Enter Cell No" required>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="con_2nd">
+        
+
+        <div class="home_sec3">
+            <h2>Explore <span style="color: rgb(0, 138, 4);"><i class="fab fa-telegram-plane"></i> </span>These
+                Welcoming<span style="color: rgb(0, 138, 4);">
+                    Visit Visa </span>Destinations</h2>
+
+
+            <div class="2nd_inner home_rehman">
+                <h5>Welcome to Rehman Travels</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur qui minus voluptatum
+                    laboriosam
+                    totam soluta nisi laborum dolor. Modi explicabo autem tenetur similique, unde velit enim cupiditate
+                    doloribus harum laborum?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum vero, est corporis eaque
+                    excepturi
+                    minima ipsam. Similique, eos. Voluptatum, debitis totam! Consequatur aperiam reprehenderit ipsum
+                    quae.
+                    Voluptatibus, libero pariatur.
+                </p>
+                <h3>Executive Umrah Packages</h3>
+                
+                <p>nce a holy trip in luxury? Well, you can try our Executive Umrah Package because it provides you with top notch facilities and amazing traveling experience. Our executive packages will take you to five-star hotels, amazing cuisines, pick and drop services in air-conditioned cars and so much more. You also get to be more content experience Umrah in a truly enigmatic way.</p>
+                <h3>Economy Umrah Package</h3>
+                <p>If you want to experience something that is not just convenient but highly affordable as well, you can always go for an economy package. Rehman Travel Economy packages are really good for those who don’t want to over budget themselves but still have an amazing experience. Our services, even in an economy package are topnotch and you can remain certain that you will not have to face any sort of inconvenience in a country you don’t really know.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-code -->
+    <div class="footer_main">
+        <div class="footer_inner">
+          <h3>Quick Links</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Home</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Flights</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Hajj</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Terms & Conditions</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Privacy Policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Refund Policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="footer_inner">
+          <h3>OUR BRANCHES</h3>
+          <nav>
+            <ul>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Islamabad</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Peshawar</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>  Lahore</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Mirpur</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Dubai (UAE)</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Makkah</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> Madinah</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i> United Kingdom</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="footer_inner">
+          <h3>CONTACT US</h3>
+          <nav>
+            <ul>
+              <li><a href="tel:+923030313185">
+                <i class="fas fa-phone"></i> 03030313185
+              </a></li>
+              <li><a href="mailto:hashiraliphw@gmail.com">
+                <i class="fas fa-envelope"></i> hashiraliphw@gmail.com</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ittehad Travels Office No 3 Ground Floor,
+                Office Tower 44 East Fazal E Haq Road Blue Area, G 6/2, Islamabad, 44000, Pakistan</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <p>&copy; 2024 <span>R & H </span>Develpers. All rights reserved.</p>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
